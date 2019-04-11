@@ -1,0 +1,24 @@
+p {
+    color: #FFF;
+}
+
+#icons {
+    flex-direction: row;
+    align-self: auto;
+    height: 12vh;
+    width: min-content;
+}
+
+#icons > img {
+    width: 10vw;
+    max-width: 10vh;
+    margin: 1vh;
+}
+
+.content {
+    font-size: 200%;
+}
+
+.title {
+    font-size: 300%;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+Created By NadavTasher
+https://github.com/NadavTasher/WebAppBase/
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="AppDescription">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#FFFFFF"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-title" content="AppName's Persona"/>
+    <link rel="apple-touch-icon" href="images/icon_apple.png"/>
+    <link rel="icon" href="images/icon.png"/>
+    <link rel="manifest" href="resources/manifest.json"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/persona.css"/>
+    <script type="text/javascript" src="javascript/app.js"></script>
+    <script type="text/javascript" src="javascript/utils.js"></script>
+    <title>AppName's Persona</title>
+    <noscript></noscript>
+</head>
+<body onload="worker();load();">
+<div>
+    <p class="title">Hi, I'm AppName.</p>
+    <p class="content">AppDescription</p>
+    <div id="icons">
+        <img src="resources/svg/icons/github_icon.svg"
+             onclick="window.location='https://github.com/';"
+             alt="GitHub">
+        <img src="resources/svg/icons/instagram_icon.svg"
+             onclick="window.location='https://instagram.com/';"
+             alt="Instagram">
+        <img src="resources/svg/icons/facebook_icon.svg"
+             onclick="window.location='https://facebook.com/';"
+             alt="Facebook">
+        <img src="resources/svg/icons/stackoverflow_icon.svg"
+             onclick="window.location='https://stackoverflow.com/users/';"
+             alt="StackOverflow">
+        <img src="resources/svg/icons/stackexchange_icon.svg"
+             onclick="window.location='https://stackexchange.com/users/';"
+             alt="StackExchange">
+        <img src="resources/svg/icons/twitter_icon.svg"
+             onclick="window.location='https://twitter.com/';"
+             alt="Twitter">
+        <img src="resources/svg/icons/google_play_icon.svg"
+             onclick="window.location='https://play.google.com/store/apps/dev?id=';"
+             alt="Google Play">
+    </div>
+    <!--Your App Body-->
+</div>
+</body>
+</html>
