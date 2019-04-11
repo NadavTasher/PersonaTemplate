@@ -15,10 +15,10 @@ p {
     margin: 1vh;
 }
 
-.content {
+#description, #custom > p {
     font-size: 200%;
 }
 
-.title {
+#title {
     font-size: 300%;
 }

@@ -19,14 +19,18 @@ https://github.com/NadavTasher/WebAppBase/
     <link rel="stylesheet" href="css/app.css"/>
     <link rel="stylesheet" href="css/persona.css"/>
     <script type="text/javascript" src="javascript/app.js"></script>
+    <script type="text/javascript" src="javascript/persona/persona.js"></script>
     <script type="text/javascript" src="javascript/utils.js"></script>
     <title>AppName's Persona</title>
     <noscript></noscript>
 </head>
-<body onload="worker();load();">
+<body onload="worker();persona(load);">
 <div>
-    <p class="title">Hi, I'm AppName.</p>
-    <p class="content">AppDescription</p>
+    <p id="title">Hi, I'm AppName.</p>
+    <p id="description">AppDescription</p>
+    <div id="custom">
+        <!--Your App Body-->
+    </div>
     <div id="icons">
         <img src="resources/svg/icons/github_icon.svg"
              onclick="window.location='https://github.com/';"
@@ -50,7 +54,6 @@ https://github.com/NadavTasher/WebAppBase/
              onclick="window.location='https://play.google.com/store/apps/dev?id=';"
              alt="Google Play">
     </div>
-    <!--Your App Body-->
 </div>
 </body>
 </html>
