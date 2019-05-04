@@ -1,6 +1,6 @@
 {
-  "name": "AppName's Persona",
-  "short_name": "AppName's Persona",
+  "name": "AppName",
+  "short_name": "AppName",
   "description": "AppDescription",
   "start_url": "../index.html",
   "background_color": "#FFFFFF",
