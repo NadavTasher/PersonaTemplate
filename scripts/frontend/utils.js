@@ -54,33 +54,30 @@ function download(file, data, type = "text/plain", encoding = "utf8") {
     link.click();
 }
 
-function slideIn(v, direction = true, callback = undefined) {
-    if (direction) {
-        slide(v, window.innerWidth - (get(v).getBoundingClientRect().right - get(v).offsetWidth), 0, 1, callback);
-    } else {
-        slide(v, - (get(v).getBoundingClientRect().left + get(v).offsetWidth), 0, 1, callback);
-    }
+function slide(v, motion = true, direction = true, callback = undefined) {
+    let offsets = {
+        right: window.innerWidth - (get(v).getBoundingClientRect().right - get(v).offsetWidth),
+        left: -(get(v).getBoundingClientRect().left + get(v).offsetWidth)
+    };
+    let offset = direction ? offsets.right : offsets.left;
+    animate(v, motion ? offset : 0, !motion ? offset : 0, 1, "left", callback);
 }
 
-function slideOut(v, direction = true, callback = undefined) {
-    slide(v, 0, (direction ? 1 : -1) * (Math.floor(get(v).offsetWidth + get(v).getBoundingClientRect().left)), 1, callback);
-}
-
-function slide(v, from, to, seconds = 1, callback = undefined) {
+function animate(v, from, to, seconds, property, callback = undefined) {
     let view = get(v);
-    view.style.removeProperty("left");
+    view.style.removeProperty(property);
     view.style.position = "relative";
     setTimeout(() => {
-        view.style.left = from + "px";
+        view.style[property] = from + "px";
         view.style.transition = seconds + "s";
         setTimeout(() => {
-            view.style.left = to + "px";
+            view.style[property] = to + "px";
             setTimeout(() => {
                 if (callback !== undefined)
                     callback();
             }, 1000 * seconds - 100);
         }, 100);
-    },);
+    }, 0);
 }
 
 function gestures(up, down, left, right, upgoing, downgoing, leftgoing, rightgoing) {
