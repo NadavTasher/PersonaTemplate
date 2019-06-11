@@ -1,3 +1,8 @@
+/*
+Created By NadavTasher
+https://github.com/NadavTasher/WebAppBase/
+*/
+
 function persona(animate = true) {
     if (animate) {
         let v = get("icons");
