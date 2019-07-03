@@ -9,7 +9,6 @@ p {
 
 #icons {
     flex-direction: row;
-    align-self: auto;
     height: 12vh;
     width: min-content;
 }
