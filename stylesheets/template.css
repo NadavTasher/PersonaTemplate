@@ -8,9 +8,7 @@ p {
 }
 
 #icons {
-    flex-direction: row;
     height: 12vh;
-    width: min-content;
 }
 
 #icons > img {
