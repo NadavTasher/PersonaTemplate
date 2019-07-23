@@ -8,19 +8,31 @@ p {
 }
 
 #icons {
-    height: 12vh;
+    /* Sizing */
+    height: 10vh;
 }
 
 #icons > img {
-    width: 10vw;
-    max-width: 10vh;
-    margin: 1vh;
+    /* Transition */
+    transition-duration: 0.1s;
+    /* Sizing */
+    width: 8vw;
+    max-width: 8vh;
+    /* Positioning */
+    margin: 2vw;
+}
+
+#icons > img:hover {
+    /* Positioning */
+    margin: 2vw 5vw;
 }
 
 #description, #custom > p {
+    /* Sizing */
     font-size: 150%;
 }
 
 #title {
+    /* Sizing */
     font-size: 300%;
 }
